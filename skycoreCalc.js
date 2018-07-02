@@ -8,7 +8,7 @@ window.onload  = function() {
 	var casingObj = document.getElementById('casing');
 	casing = casingObj.options[casingObj.selectedIndex];
 	var genObj = document.getElementById('generator');
-	gen = casingObj.options[casingObj.selectedIndex];
+	gen = genObj.options[genObj.selectedIndex];
 	dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69};
 }
 
