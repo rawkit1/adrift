@@ -1,3 +1,6 @@
+var gen;
+var dict;
+
 window.onload  = function() {
 	
 	document.getElementById('casing').addEventListener("click", updateSpeed);
@@ -5,8 +8,8 @@ window.onload  = function() {
 	var casingObj = document.getElementById('casing');
 	var casing = casingObj.options[casingObj.selectedIndex];
 	var genObj = document.getElementById('generator');
-	var gen = casingObj.options[casingObj.selectedIndex];
-	var dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69};
+	gen = casingObj.options[casingObj.selectedIndex];
+	dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69};
 }
 
 
