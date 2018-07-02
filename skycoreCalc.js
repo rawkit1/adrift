@@ -26,7 +26,6 @@ function updateSpeed(){
   else {
 	  genWeight = 0;
   }
-  else
   alert(genWeight.toString());
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
 			}
