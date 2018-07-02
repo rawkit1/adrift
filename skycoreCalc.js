@@ -2,9 +2,9 @@ window.onload  = function() {
 	
 	document.getElementById('casing').addEventListener("click", updateSpeed);
 	document.getElementById('generator').addEventListener("click", updateSpeed);
-	var dict = {'aluminum':.26,'copper':.50,'silver':.55,'gold':.69};
 	var casing = document.getElementById('casing').options[e.selectedIndex];
 	var gen = document.getElementById('generator').options[e.selectedIndex];
+	var dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69};
 	
 }
 
