@@ -1,25 +1,35 @@
-<h2>Skycore Calculator</h2>
-<p>Casing: </p>
-<select title="The casing of the Skycore. This doesn't change the lift capacity">
-  <option value=".26">Aluminum</option>
-  <option value=".30">Titanium</option>
-  <option value=".34">Tin</option>
-  <option value=".38">Iron</option>
-  <option value=".40">Steel</option>
-  <option value=".42">Bronze</option>
-  <option value=".46">Nickel</option>
-  <option value=".50">Copper</option>
-  <option value=".55">Silver</option>
-  <option value=".60">Lead</option>
-  <option value=".69">Gold</option>
-  <option value=".74">Tungsten</option>
-</select>
-<p>Generator: </p>
-<select title="The generator. Good conductors = good Skycore">
-  <option value="aluminum">Aluminum</option>
-  <option value="copper">Copper</option>
-  <option value="silver">Silver</option>
-  <option value="gold">Gold</option>
-</select>
-<input class="otpt" id="mass" placeholder="Weight of Skycore">
-<input class="otpt" id="lift" placeholder="Total lift capacity">
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text|EB+Garamond|IM+Fell+English+SC|Josefin+Sans" rel="stylesheet">
+	<link href="shared_styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<script src="skycoreCalc.js"></script>
+    <h2>Skycore Calculator</h2>
+    <p>Casing: </p>
+    <select title="The casing of the Skycore. This doesn't change the lift capacity">
+      <option value=".26">Aluminum</option>
+      <option value=".30">Titanium</option>
+      <option value=".34">Tin</option>
+      <option value=".38">Iron</option>
+      <option value=".40">Steel</option>
+      <option value=".42">Bronze</option>
+      <option value=".46">Nickel</option>
+      <option value=".50">Copper</option>
+      <option value=".55">Silver</option>
+      <option value=".60">Lead</option>
+      <option value=".69">Gold</option>
+      <option value=".74">Tungsten</option>
+    </select><br />
+    <p>Generator: </p>
+    <select title="The generator. Good conductors = good Skycore">
+      <option value="aluminum">Aluminum</option>
+      <option value="copper">Copper</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+    </select><br /><br />
+    <input class="otpt" id="mass" placeholder="Weight of Skycore"><br />
+    <input class="otpt" id="lift" placeholder="Total lift capacity">
+  </body>
+<html>
