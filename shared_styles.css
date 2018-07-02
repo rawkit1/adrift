@@ -84,3 +84,6 @@ div.container:hover > span {
 div.container:hover > span:hover {
 	opacity: 1;
 }
+option {
+	padding: 4px 8px;
+}
