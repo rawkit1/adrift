@@ -13,6 +13,6 @@ window.onload  = function() {
 function updateSpeed(){
   console.log(casing.value);
   console.log(gen.value)
-  console.log(dict[gen.value].toString()
+  console.log(dict[gen.value].toString())
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
 }
