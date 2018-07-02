@@ -11,5 +11,4 @@ window.onload=function(){
 
 function updateSpeed(){
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
-	document.getElementById('output').value = "Speed: " + 50 * Math.sqrt(2 * power.value / mass.value).toFixed(3) + " knots";
 			}
