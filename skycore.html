@@ -6,8 +6,7 @@
 	</head>
 	<body>
 		<script src="skycoreCalc.js"></script>
-    <h2>Skycore Calculator</h2>
-
+    <h2 style="margin: 16px;">Skycore Calculator</h2>
     <select title="The casing of the Skycore. This doesn't change the lift capacity">
       <option selected disabled>Casing Material</option>
       <option value=".26">Aluminum</option>
@@ -22,14 +21,16 @@
       <option value=".60">Lead</option>
       <option value=".69">Gold</option>
       <option value=".74">Tungsten</option>
-    </select><br />
+    </select>
     <select title="The generator. Good conductors = good Skycore">
       <option selected disabled>Generator Material</option>
       <option value="aluminum">Aluminum</option>
       <option value="copper">Copper</option>
       <option value="silver">Silver</option>
       <option value="gold">Gold</option>
-    </select><br /><br />
+	</select>
+		<br />
+		<h2 style="margin: 16px;">Output:</h2>
     <input class="otpt" id="mass" placeholder="Weight of Skycore" disabled><br />
     <input class="otpt" id="lift" placeholder="Total lift capacity" disabled>
   </body>
