@@ -1,5 +1,5 @@
 window.onload  = function() {
-	alert("Hello! I am an alert box!!");
+	alert("This page is under construction");
 	document.getElementById('casing').addEventListener("click", updateSpeed);
 	document.getElementById('generator').addEventListener("click", updateSpeed);
 	var dict = {'aluminum':.26,'copper':.50,'silver':.55,'gold':.69};
