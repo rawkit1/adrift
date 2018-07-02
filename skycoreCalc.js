@@ -11,6 +11,5 @@ window.onload  = function() {
 
 
 function updateSpeed(){
-  alert("Hello! I am an alert box!!");
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
 			}
