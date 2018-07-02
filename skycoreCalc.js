@@ -1,8 +1,8 @@
 var dict = {'aluminum':.26,'copper':.50,'silver':.55,'gold':.69};
 
 window.onload=function(){
-	document.getElementById('casing').addEventListener("keyup", updateSpeed);
-	document.getElementById('generator').addEventListener("keyup", updateSpeed);
+	document.getElementById('casing').addEventListener("click", updateSpeed);
+	document.getElementById('generator').addEventListener("click", updateSpeed);
 	var casing = document.getElementById('casing').options[e.selectedIndex];
 	var gen = document.getElementById('generator').options[e.selectedIndex];
 }
