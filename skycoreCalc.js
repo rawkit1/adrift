@@ -11,6 +11,6 @@ window.onload  = function() {
 
 
 function updateSpeed(){
-  alert(casing.value);
+  alert(casing.value.toString());
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
 			}
