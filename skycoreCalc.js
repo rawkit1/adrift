@@ -11,6 +11,6 @@ window.onload  = function() {
 
 
 function updateSpeed(){
-  alert("This page is under construction");
+  alert(casing.value*100+dict[gen.value]*40);
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
 			}
