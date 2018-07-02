@@ -9,7 +9,7 @@ window.onload  = function() {
 	casing = casingObj.options[casingObj.selectedIndex];
 	var genObj = document.getElementById('generator');
 	gen = genObj.options[genObj.selectedIndex];
-	dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69};
+	dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69,'n/a':0};
 }
 
 
