@@ -6,12 +6,12 @@ window.onload  = function() {
 	
 	document.getElementById('casing').addEventListener("click", updateSpeed);
 	document.getElementById('generator').addEventListener("click", updateSpeed);
-	casing = document.getElementById('casing').value;
-	gen = document.getElementById('generator').value;
 }
 
 
 function updateSpeed(){
+  gen = document.getElementById('generator').value;
+  casing = document.getElementById('casing').value;
   console.log(dict);
   document.getElementById('mass').value = casing*100+dict[gen]*40;
 }
