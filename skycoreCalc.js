@@ -1,5 +1,5 @@
 var gen;
-var dict;
+var dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69,'n/a':0};
 
 window.onload  = function() {
 	
@@ -10,13 +10,11 @@ window.onload  = function() {
 	var genObj = document.getElementById('generator');
 	console.log(genObj.selectedIndex);
 	gen = genObj.options[genObj.selectedIndex];
-	dict = {'aluminum':0.26,'copper':0.50,'silver':0.55,'gold':0.69,'n/a':0};
+	
 }
 
 
 function updateSpeed(){
-  console.log(casing.value.toString());
-  console.log(gen.value.toString())
-  console.log(dict[gen.value].toString())
+  console.log(dict);
   document.getElementById('mass').value = casing.value*100+dict[gen.value]*40;
 }
