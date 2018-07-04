@@ -20,7 +20,7 @@ function updateSpeed(){
   genQ = document.getElementById('genQ').value;
   calc1 = casing*100+dict[gen]*40;
   document.getElementById('mass').value = "Weight: " + calc1.toFixed(2) + "kg";
-  calc225 = (10+genQ);
+  calc225 = 10+genQ;
   calc25 = dict2[gen]*calc225;
   calc2 = 1000 + calc25;
   document.getElementById('lift').value = "Lift capacity: " + calc2 + "kg";
