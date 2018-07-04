@@ -6,10 +6,8 @@ window.onload  = function() {
 	document.getElementById('casing').addEventListener("click", updateSpeed);
 	document.getElementById('generator').addEventListener("click", updateSpeed);
 	var casingObj = document.getElementById('casing');
-	casing = casingObj.options[casingObj.selectedIndex];
 	var genObj = document.getElementById('generator');
-	console.log(genObj.selectedIndex);
-	gen = genObj.options[genObj.selectedIndex];
+	gen = genObj..selectedIndex;
 	
 }
 
