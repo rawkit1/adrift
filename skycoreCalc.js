@@ -7,9 +7,9 @@ window.onload  = function() {
 	document.getElementById('casing').addEventListener("click", updateSpeed);
 	document.getElementById('generator').addEventListener("click", updateSpeed);
 	var casingObj = document.getElementById('casing');
-	casing = casingObj.selectedOptions[0];
+	casing = casingObj;
 	var genObj = document.getElementById('generator');
-	gen = genObj.selectedOptions[0];
+	gen = genObj;
 	
 }
 
