@@ -17,7 +17,7 @@ window.onload  = function() {
 function updateSpeed(){
   gen = document.getElementById('generator').value;
   casing = document.getElementById('casing').value;
-  genQ = document.getElementById('genQ').value;
+  genQ = parseInt(document.getElementById('genQ').value, 10);
   calc1 = casing*100+dict[gen]*40;
   document.getElementById('mass').value = "Weight: " + calc1.toFixed(2) + "kg";
   calc225 = 10+genQ;
