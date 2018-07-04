@@ -68,6 +68,10 @@ input, select {
 input:focus, select:focus {
   box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
+select {
+	padding: 6px 16px !important;
+}
+
 input.otpt {
   width: 225px;
   background: white;
