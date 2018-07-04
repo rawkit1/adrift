@@ -5,6 +5,7 @@ var dict2 = {'aluminum':6,'copper':7.5,'silver':8,'gold':8.5,'n/a':0};
 var genQ;
 var calc1;
 var calc2;
+var calc25;
 window.onload  = function() {
   document.getElementById('casing').addEventListener("click", updateSpeed);
   document.getElementById('generator').addEventListener("click", updateSpeed);
@@ -18,6 +19,7 @@ function updateSpeed(){
   genQ = document.getElementById('genQ').value;
   calc1 = casing*100+dict[gen]*40.toFixed(2);
   document.getElementById('mass').value = "Weight: " + calc1 + "kg";
-  calc2 = 1000+(dict2[gen]*(10+genQ));
+  calc25 = dict2[gen]*(10+genQ)
+  calc2 = 1000 + calc25;
   document.getElementById('lift').value = "Lift capacity: " + calc2 + "kg";
 }
