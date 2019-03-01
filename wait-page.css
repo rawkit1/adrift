@@ -4,6 +4,8 @@ html {
 .main {
   background-image: url("blurred-4k-bg.png");
   background-size: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 h1 {
   line-height: .8vh;
