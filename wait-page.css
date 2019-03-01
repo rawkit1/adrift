@@ -17,5 +17,8 @@ p {
   color: #222;
   font-size: 24px;
   transform: translateZ(20px);
-  width: 50vw;
+  width: 30vw;
+}
+psmaller {
+  font-size: 18px;
 }
