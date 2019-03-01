@@ -1,0 +1,14 @@
+html {
+  background-image: url("blurred-4k-bg.png");
+  background-size: 100%;
+}
+h1 {
+  line-height: .8vh;
+  color: #222;
+  margin-top: 40vh;
+  font-size: 60px;
+}
+p {
+  color: #222;
+  font-size: 24px;
+}
