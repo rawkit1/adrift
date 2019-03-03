@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>WAS Home</title>
+    <link rel="stylesheet" href="main-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script>
+      function show(shown, hidden, hidden2, hidden3) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden).style.display='none';
+        document.getElementById(hidden2).style.display='none';
+        document.getElementById(hidden3).style.display='none';
+        return false;
+      }
+    </script>
+   </head>
+   <body>
+    <center>
+      <div id="Home">
+        <ul>
+          <li><a onclick="return show('Home', 'Charts', 'Bot', 'Donate');" class="active">Home</a></li>
+          <li><a onclick="return show('Charts', 'Home', 'Bot', 'Donate');">Charts</a></li>
+          <li><a onclick="return show('Bot', 'Charts', 'Home', 'Donate');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Charts', 'Home', 'Bot');">Donate</a></li>
+        </ul>
+        <img src="images/logo-main.png" width="50%" class="image-logo">
+        <br /><br />
+        <h1>Welcome to worldsadrift.science!</h1>
+        <p style="text-align:justify;">This site is dedicated to the inner workings of Worlds Adrift. Here, you can find a compilation of resources and charts detailing materials, game mechanics and more!<br /><br />
+          Calculators have been moved a Discord bot for greater accessibility. With luck, it'll be on the Worlds Adrift Discord eventually but for now it can be invited on the <a href="#" onclick="return show('Bot', 'Home', 'Charts', 'Donate');">Bot</a> page!</p>
+      </div>
+
+      <div id="Charts" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Charts', 'Bot', 'Donate');">Home</a></li>
+          <li><a onclick="return show('Charts', 'Home', 'Bot', 'Donate');" class="active">Charts</a></li>
+          <li><a onclick="return show('Bot', 'Charts', 'Home', 'Donate');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Charts', 'Home', 'Bot');">Donate</a></li>
+        </ul>
+      </div>
+
+      <div id="Bot" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Charts', 'Bot', 'Donate');">Home</a></li>
+          <li><a onclick="return show('Charts', 'Home', 'Bot', 'Donate');">Charts</a></li>
+          <li><a onclick="return show('Bot', 'Charts', 'Home', 'Donate');" class="active">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Charts', 'Home', 'Bot');">Donate</a></li>
+        </ul>
+      </div>
+
+      <div id="Donate" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Charts', 'Bot', 'Donate');">Home</a></li>
+          <li><a onclick="return show('Charts', 'Home', 'Bot', 'Donate');">Charts</a></li>
+          <li><a onclick="return show('Bot', 'Charts', 'Home', 'Donate');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Charts', 'Home', 'Bot');" class="active">Donate</a></li>
+        </ul>
+      </div>
+
+    </center>
+   </body>
+</html>
