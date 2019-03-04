@@ -11,6 +11,15 @@ body {
   margin-top: 40vh;
   font-size: 60px;
 }
+.image-demo {
+  margin-top: 5vh;
+  box-shadow: 0 0 30px #36393f;
+  transition: all 1s;
+}
+.image-demo:hover {
+  box-shadow: 0 0 50px #36393f;
+  transform: scale(1.03);
+}
 h1 {
   line-height: .8vh;
   color: #222;
