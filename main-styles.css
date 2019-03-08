@@ -89,12 +89,8 @@ li a.active {
   margin-top: 5vh;
 }
 
-p a:active {
-  color: #efb697;
-}
-
 p a {
-  color: #f49866;
+  color: #333;
   opacity: .7;
   font-size: 24px;
   transition: all .3s;
@@ -124,11 +120,12 @@ p a:hover {
   padding: 0;
   margin: 0;
   transition: all .8s;
-  opacity: .85;
+  opacity: .75;
 }
 .collapsed:hover {
+  opacity: .85;
   width: 25vw;
-  height: 20vh;
+  height: 23vh;
   transition: all .8s;
 }
 .collapsed h2 {
