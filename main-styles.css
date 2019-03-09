@@ -103,7 +103,7 @@ p a:hover {
 .collapsed a {
   color: white;
   opacity: .8;
-  font-size: 24px;
+  font-size: 1vw;
   transition: all .3s;
 }
 
