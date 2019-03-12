@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WAS Home</title>
+    <link rel="stylesheet" href="main-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script>
+      function show(shown, hidden, hidden2, hidden3, hidden4) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden).style.display='none';
+        document.getElementById(hidden2).style.display='none';
+        document.getElementById(hidden3).style.display='none';
+        document.getElementById(hidden4).style.display='none';
+        return false;
+      }
+    </script>
+   </head>
+   <body>
+    <center>
+      <div id="Home">
+        <ul>
+          <li><a onclick="return show('Home', 'Resources', 'Bot', 'Donate', 'Calculators');" class="active">Home</a></li>
+          <li><a onclick="return show('Resources', 'Home', 'Bot', 'Donate', 'Calculators');">Resources</a></li>
+          <li><a onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');">Calculators</a></li>
+          <li><a onclick="return show('Bot', 'Resources', 'Home', 'Donate', 'Calculators');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Resources', 'Home', 'Bot', 'Calculators');">Donate</a></li>
+        </ul>
+        <img src="images/logo-main.png" width="50%" class="image-logo">
+        <br /><br />
+        <h1>Welcome to worldsadrift.science!</h1>
+        <p style="text-align:justify;">This site is dedicated to the inner workings of Worlds Adrift. Here, you can find a compilation of resources and Resources detailing materials, game mechanics and more!<br /><br />
+          Calculators are still available on this site, but they have also been ported a Discord bot for greater accessibility. It's avilable on the official Worlds Adrift Discord and can also be invited to independant servers on the <a href="#" onclick="return show('Bot', 'Home', 'Resources', 'Donate');">Bot</a> page!</p>
+      </div>
+
+      <div id="Resources" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Resources', 'Bot', 'Donate', 'Calculators');">Home</a></li>
+          <li><a onclick="return show('Resources', 'Home', 'Bot', 'Donate', 'Calculators');" class="active">Resources</a></li>
+          <li><a onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');">Calculators</a></li>
+          <li><a onclick="return show('Bot', 'Resources', 'Home', 'Donate', 'Calculators');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Resources', 'Home', 'Bot', 'Calculators');">Donate</a></li>
+        </ul>
+        <img src="images/logo-main.png" width="50%" class="image-logo">
+        <br /><br />
+        <h1>Resources</h1>
+        <p style="margin:0!important">Free charts! Get your charts here!</p><br />
+        <div class="collapsed" id="engines">
+          <h2>Engines</h2><br />
+          <a href="https://docs.google.com/spreadsheets/d/1HWwusbRuvW3Pn-kol5VlUQwX44MtkD0EKLDJXkDzUv8/edit#gid=718522703">Engine Parts - Machine Maker</a><br />
+          <a href="images/FC2.png">Fuel consumption graph - Ziwix</a><br />
+          <a href="#" onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');">Calculators</a><br />
+          <a href="https://worldsadrift.gamepedia.com/Engines">Official wiki post</a>
+        </div>
+        <div class="collapsed" id="cannons">
+          <h2>Cannons / Swivels</h2><br />
+          <a href="https://docs.google.com/spreadsheets/d/1LPgi48pQLU5WaoYOV8WCdr3CR1ki0KyhwYdT5iSvfTA/edit#gid=1757901782">Cannon + swivel science - Machine Maker</a><br />
+          <a href="https://docs.google.com/spreadsheets/d/17WPEuZd3cNRiFnAHbV1cNkfkGFZPS4cE9UhNepsfF_Q/edit">Cannon parts - Machine Maker</a><br />
+          <a href="https://worldsadrift.gamepedia.com/Cannons">Official wiki post</a>
+        </div>
+        <div class="collapsed" id="wings">
+          <h2>Wings</h2><br />
+          <a href="wing_orientation.pdf" title="Essentially, orient your wings in an X pattern">Wing Orientation Report - Ziwix</a><br />
+          <a href="https://worldsadrift.gamepedia.com/Wings">Official wiki post</a>
+        </div>
+        <div class="collapsed" id="other">
+          <h2>Other</h2><br />
+          <a href="driss_relations.png">Alliance relations (Driss) - Ziwix</a><br />
+          <a href="#" onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');">Airspeed calculator</a>
+        </div>
+      </div>
+
+      <div id="Calculators" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Resources', 'Bot', 'Donate', 'Calculators');">Home</a></li>
+          <li><a onclick="return show('Resources', 'Home', 'Bot', 'Donate', 'Calculators');">Resources</a></li>
+          <li><a onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');" class="active">Calculators</a></li>
+          <li><a onclick="return show('Bot', 'Resources', 'Home', 'Donate', 'Calculators');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Resources', 'Home', 'Bot', 'Calculators');">Donate</a></li>
+        </ul>
+        <img src="images/logo-main.png" width="50%" class="image-logo">
+        <br /><br />
+        <h1>Various Calculators</h1>
+        <p><a href="#" onclick="return show('Bot', 'Home', 'Resources', 'Calculators', 'Donate');">All calculators also available on Rebus!</a><br /><br />
+        <a id="airspeed" href="#">Airspeed calculator</a></p>
+
+        <div id="airspeedModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close asClose">&times;</span>
+              <h1 style="color:white;padding-bottom:.2vw;">Airspeed Calculator</h1>
+            </div>
+            <div class="modal-body">
+              <p>Calculator input</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="Bot" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Resources', 'Bot', 'Donate', 'Calculators');">Home</a></li>
+          <li><a onclick="return show('Resources', 'Home', 'Bot', 'Donate', 'Calculators');">Resources</a></li>
+          <li><a onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');">Calculators</a></li>
+          <li><a onclick="return show('Bot', 'Resources', 'Home', 'Donate', 'Calculators');" class="active">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Resources', 'Home', 'Bot', 'Calculators');">Donate</a></li>
+        </ul>
+        <img src="images/logo-main.png" width="50%" class="image-logo">
+        <br /><br />
+        <h1>Rebus Discord Bot</h1>
+        <p><a href="#demo">See Rebus in action</a></p>
+        <img id="demo" data-tilt data-tilt-reverse="true" data-tilt-scale="1.04" data-tilt-easing="cubic-bezier(.03,.98,.52,.99)" data-tilt-perspective="1500" src="images/rebus-demo-512.gif" width="20%" class="image-demo">
+        <p style="color:#333"><psmaller>Fuel consumption, airspeed, and engine overheat calculators.</psmaller><br />More on the way.<br><a href="https://discordapp.com/oauth2/authorize?client_id=506142527745949716&scope=bot&permissions=67111936">Invite Rebus to your server</a></p>
+
+      </div>
+
+      <div id="Donate" style="display:none">
+        <ul>
+          <li><a onclick="return show('Home', 'Resources', 'Bot', 'Donate', 'Calculators');">Home</a></li>
+          <li><a onclick="return show('Resources', 'Home', 'Bot', 'Donate', 'Calculators');">Resources</a></li>
+          <li><a onclick="return show('Calculators', 'Resources', 'Home', 'Bot', 'Donate');">Calculators</a></li>
+          <li><a onclick="return show('Bot', 'Resources', 'Home', 'Donate', 'Calculators');">Discord Bot</a></li>
+          <li><a onclick="return show('Donate', 'Resources', 'Home', 'Bot', 'Calculators');" class="active">Donate</a></li>
+        </ul>
+        <img src="images/logo-main.png" width="50%" class="image-logo">
+        <br /><br />
+        <h1>Keep worlds.adrift.science alive</h1>
+        <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=5PW8SBK2SBT3C&item_name=Worldsadrift.science&currency_code=USD&source=url">Buy me a cup of coffee!</a></p>
+      </div>
+    </center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.6.1/vanilla-tilt.js"></script>
+
+    <script>
+    // Get the modal
+    var modal1 = document.getElementById('airspeedModal');
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("airspeed");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("asClose")[0];
+
+    // When the user clicks the button, open the modal 
+    btn1.onclick = function() {
+      modal1.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function() {
+      modal1.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
+    </script>
+  </body>
+</html>

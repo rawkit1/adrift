@@ -1,3 +1,4 @@
+
 window.onload=function(){
 	document.getElementById('fe').addEventListener("keyup", updateSpeed);
 	document.getElementById('num').addEventListener("keyup", updateSpeed);

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WAS Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="rework-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="w3-bar w3-large w3-teal">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile navbar">Home</a>
+        <a class="w3-bar-item w3-button w3-mobile navbar active">Resources</a>
+        <a href="calculators.html" class="w3-bar-item w3-button w3-mobile navbar">Calculators</a>
+        <a href="bot.html" class="w3-bar-item w3-button w3-mobile navbar">Bot</a>
+        <a href="donate.html" class="w3-bar-item w3-button w3-mobile navbar">Donate</a>
+    </div>
+    <div class="w3-container w3-center w3-cell-middle">
+        <h1 style="margin-top:8vw;font-size:4vh;" class="w3-text-teal">Resources</h1>
+        <div class="w3-row">
+            <div class="w3-third w3-container">
+            </div>
+            <div class="w3-third w3-container">
+                <button onclick="accordion('Engines')" class="w3-btn w3-block w3-teal w3-left-align w3-large w3-center">Engines</button>
+                <div id="Engines" class="w3-container w3-hide w3-light-grey">
+                    <ul class="w3-ul w3-padding-16">
+                        <li><a class=" w3-large w3-text-teal" href="https://docs.google.com/spreadsheets/d/1HWwusbRuvW3Pn-kol5VlUQwX44MtkD0EKLDJXkDzUv8/edit#gid=718522703">Engine parts - Machine Maker</a></li>
+                        <li><a class=" w3-large w3-text-teal imageModalLink" onclick="document.getElementById('fuelGraph').style.display='block'">Fuel consumption graph - Ziwix</a></li>
+                        <li><a class=" w3-large w3-text-teal" href="https://worldsadrift.gamepedia.com/Engines">Official wiki post</a></li>
+                        <li><a class=" w3-large w3-text-teal" href="calculators.html">Engine calculators</a></li>
+                    </ul>
+                </div>
+                <button onclick="accordion('Cannons')" class="w3-btn w3-block w3-teal w3-left-align w3-large w3-center">Cannons and Swivels</button>
+                <div id="Cannons" class="w3-container w3-hide w3-light-grey">
+                    <ul class="w3-ul w3-padding-16">
+                        <li><a class=" w3-large w3-text-teal" href="https://docs.google.com/spreadsheets/d/1LPgi48pQLU5WaoYOV8WCdr3CR1ki0KyhwYdT5iSvfTA/edit#gid=1757901782">Cannon + swivel science - Machine Maker</a></li>
+                        <li><a class=" w3-large w3-text-teal" href="https://docs.google.com/spreadsheets/d/17WPEuZd3cNRiFnAHbV1cNkfkGFZPS4cE9UhNepsfF_Q/edit">Cannon parts - Machine Maker</a></li>
+                        <li><a class=" w3-large w3-text-teal" href="https://worldsadrift.gamepedia.com/Engines">Official wiki post - cannons</a></li>
+                    </ul>
+                </div>
+                <button onclick="accordion('Wings')" class="w3-btn w3-block w3-teal w3-left-align w3-large w3-center">Wings</button>
+                <div id="Wings" class="w3-container w3-hide w3-light-grey">
+                    <ul class="w3-ul w3-padding-16">
+                        <li><a class=" w3-large w3-text-teal" href="resources/wing_orientation.pdf" title="Essentially, orient your wings in an X pattern.">Wing orientation report - Ziwix</a></li>
+                        <li><a class=" w3-large w3-text-teal" href="https://worldsadrift.gamepedia.com/Wings">Official wiki post</a></li>
+                    </ul>
+                </div>
+                <button onclick="accordion('Other')" class="w3-btn w3-block w3-teal w3-left-align w3-large w3-center">Other</button>
+                <div id="Other" class="w3-container w3-hide w3-light-grey">
+                    <ul class="w3-ul w3-padding-16">
+                        <li><a class=" w3-large w3-text-teal imageModalLink" onclick="document.getElementById('allianceRelations').style.display='block'">Driss alliance relations - Ziwix</a></li>
+                        <li><a class=" w3-large w3-text-teal" href="calculators.html">Calculators</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div id="fuelGraph" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-top">
+                <img src="resources/FC2.png" style="width:100%">
+            </div>
+        </div>
+        <div id="allianceRelations" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-top">
+                <img src="resources/driss_relations.png" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <script src="shared-scripts.js"></script>
+</body>
+
+</html>
