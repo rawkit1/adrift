@@ -41,8 +41,12 @@ button:hover {
 	box-shadow: 0 0 50px rgba(0,0,0,.2) !important;
 }
 iframe {
-	border: 4px solid #009688;
+	background: lightgrey;
 }
 .w3-code {
 	border-left:4px solid #009688 !important;
+}
+input {
+	margin-top: 24px !important;
+	margin-bottom: 24px !important;
 }
